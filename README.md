@@ -19,7 +19,8 @@ Please provide context about the mitigations that were applied if applicable and
 ## Scope
 
 ### Branch
-[🔴 EM: If applicable, add a link to the branch in the sponsor's repo that contains all PRs. If there is more than one, please format in a bulleted list.]
+
+https://github.com/silo-finance/silo-contracts-v2
 
 ### Mitigation of High & Medium Severity Issues
 
@@ -27,7 +28,10 @@ Mitigations of all High and Medium issues listed here will be considered in-scop
 
 | Fix | Mitigation of | Notes | 
 | ----------- | ------------- | ----------- |
-| [Commit XXX](https://github.com/your-repo/sample-contracts/pull/XXX) | [F-X: Title](link to finding) | This mitigation does XYZ | 
+| [PR 1162](https://github.com/silo-finance/silo-contracts-v2/pull/1162) (solution) and [PR 1173](https://github.com/silo-finance/silo-contracts-v2/pull/1173) | [F-11: Deflation attack](https://code4rena.com/audits/2025-03-silo-finance/submissions/S-454) (optimization) | Ensure that deposit does not generate zero shares | 
+| [PR 1166](https://github.com/silo-finance/silo-contracts-v2/pull/1166) | [F-17: Supply function doesn't account for market maxDeposit when providing assets to it](https://code4rena.com/audits/2025-03-silo-finance/submissions/S-312) | Account for `maxDeposit` when doing deposit | 
+| [PR 1165](https://github.com/silo-finance/silo-contracts-v2/pull/1165) | [F-57: SiloVault.sol :: Markets with assets that revert on zero approvals cannot be removed.
+](https://code4rena.com/audits/2025-03-silo-finance/submissions/S-107) | Reset approval to 1 wei | 
 
 ### Additional scope to be reviewed
 [🔴 EM: Remove this section if the sponsor is only mitigating HMs. Add all relevant PRs/commits to the table below. This can include lows, QA reports, and fixes not included in the C4 audit.  If the finding does not have a finding (or submission) number from the C4 audit, please use the `ADD-01` as the naming convention.]

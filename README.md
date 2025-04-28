@@ -44,4 +44,4 @@ These are additional changes that will be in scope.
 ## Out of Scope
 [🔴 EM: Please list any High and Medium issues that were judged as valid but the sponsor has chosen not to fix in a bulleted list.]
 
-- [F-1: Title](link to finding)
+- [F-26: SiloVault will incorrectly accrue rewards during user `transfer`/`transferFrom` actions due to unsynced `totalSupply()`](https://code4rena.com/audits/2025-03-silo-finance/submissions/S-566)

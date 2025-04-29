@@ -30,17 +30,13 @@ Mitigations of all High and Medium issues listed here will be considered in-scop
 | ----------- | ------------- | ----------- |
 | [PR 1162](https://github.com/silo-finance/silo-contracts-v2/pull/1162) (solution) and [PR 1173](https://github.com/silo-finance/silo-contracts-v2/pull/1173) (optimization) | [F-11: Deflation attack](https://code4rena.com/audits/2025-03-silo-finance/submissions/S-454) | Ensure that deposit does not generate zero shares | 
 | [PR 1166](https://github.com/silo-finance/silo-contracts-v2/pull/1166) | [F-17: Supply function doesn't account for market maxDeposit when providing assets to it](https://code4rena.com/audits/2025-03-silo-finance/submissions/S-312) | Account for `maxDeposit` when doing deposit | 
+| [PR 1163](https://github.com/silo-finance/silo-contracts-v2/pull/1163) | [F-26: SiloVault will incorrectly accrue rewards during user transfer/transferFrom actions due to unsynced totalSupply()](https://code4rena.com/audits/2025-03-silo-finance/submissions/S-566) | Ensure we can deposit 100% of the CAP | 
 | [PR 1165](https://github.com/silo-finance/silo-contracts-v2/pull/1165) | [F-57: SiloVault.sol :: Markets with assets that revert on zero approvals cannot be removed](https://code4rena.com/audits/2025-03-silo-finance/submissions/S-107) | Reset approval to 1 wei | 
 
 ### Additional scope to be reviewed
 [🔴 EM: Remove this section if the sponsor is only mitigating HMs. Add all relevant PRs/commits to the table below. This can include lows, QA reports, and fixes not included in the C4 audit.  If the finding does not have a finding (or submission) number from the C4 audit, please use the `ADD-01` as the naming convention.]
-
-These are additional changes that will be in scope.
-
-| Fix | Mitigation of | Notes | 
-| ----------- | ------------- | ----------- |
-| [Commit XXX](https://github.com/your-repo/sample-contracts/pull/XXX) | ADD-01 | This mitigation does XYZ | 
+ 
 
 ## Out of Scope
 
-- [F-26: SiloVault will incorrectly accrue rewards during user `transfer`/`transferFrom` actions due to unsynced `totalSupply()`](https://code4rena.com/audits/2025-03-silo-finance/submissions/S-566)
+- [F-195: Lack of slippage and deadline protection in deposit(), withdraw() and redeem()](https://code4rena.com/audits/2025-03-silo-finance/submissions/S-103)

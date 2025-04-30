@@ -32,3 +32,4 @@ Mitigations of all High and Medium issues listed here will be considered in-scop
 ## Out of Scope
 
 - [F-195: Lack of slippage and deadline protection in deposit(), withdraw() and redeem()](https://code4rena.com/audits/2025-03-silo-finance/submissions/F-195)
+- [F-207: Incorrect reward distribution due to feeShares minting order](https://code4rena.com/audits/2025-03-silo-finance/submissions/F-207)
